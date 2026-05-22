@@ -1,0 +1,26 @@
+# 1. Bỏ qua các file cache tự động của Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 2. Bỏ qua thư mục chứa môi trường ảo (nếu sau này bạn tạo)
+venv/
+env/
+.env
+
+# 3. BỎ QUA FILE MODEL AI NẶNG (RẤT QUAN TRỌNG)
+# Git không sinh ra để lưu file .pt nặng hàng trăm MB, nó sẽ làm sập kho code của bạn
+backend/models/*.pt
+backend/models/custom_weights/
+
+# 4. Bỏ qua dữ liệu người dùng tải lên và data thu thập
+# Chúng ta chỉ giữ lại cấu trúc thư mục, không giữ các file ảnh bên trong
+
+backend/data_source/collected/*
+!backend/data_source/collected/.gitkeep
+# backend/data_source/training_data/*
+# !backend/data_source/training_data/.gitkeep
+
+# 5. Bỏ qua cấu hình riêng của các IDE (Editor)
+.vscode/
+.idea/

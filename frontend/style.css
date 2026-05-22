@@ -1,0 +1,40 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0; padding: 20px;
+    display: flex; justify-content: center;
+}
+.container {
+    background-color: white;
+    width: 100%; max-width: 800px;
+    padding: 30px; border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+h1 { color: #2563eb; margin-bottom: 5px;}
+.upload-section { margin: 20px 0; }
+input[type="file"] { padding: 10px; }
+button {
+    padding: 10px 20px; background-color: #2563eb;
+    color: white; border: none; border-radius: 6px;
+    cursor: pointer; font-size: 16px; font-weight: bold;
+}
+button:hover { background-color: #1d4ed8; }
+.hidden { display: none !important; }
+#loading { margin: 20px 0; color: #d97706; font-weight: bold; }
+.result-section {
+    display: flex; flex-wrap: wrap; 
+    gap: 20px; margin-top: 30px; text-align: left;
+}
+.image-preview { flex: 1; min-width: 300px; }
+.image-preview img {
+    width: 100%; border-radius: 8px; border: 2px dashed #cbd5e1;
+}
+.vocab-list { flex: 1; min-width: 300px; }
+.vocab-card {
+    background-color: #f8fafc; border-left: 4px solid #10b981;
+    padding: 15px; margin-bottom: 15px; border-radius: 6px;
+}
+.vocab-word { font-size: 20px; font-weight: bold; color: #10b981; margin: 0 0 5px 0;}
+.vocab-related { font-size: 14px; color: #64748b; font-style: italic; margin-bottom: 8px;}
+.vocab-example { font-size: 15px; color: #334155; }

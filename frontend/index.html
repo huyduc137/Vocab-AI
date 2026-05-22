@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI English Vocab Learn</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📸 HỌC TỪ VỰNG QUA ẢNH BẰNG AI</h1>
+        <p>Tải một bức ảnh lên, AI sẽ quét và dạy bạn từ vựng tiếng Anh!</p>
+        
+        <!-- Khu vực Upload -->
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*">
+            <button id="submitBtn">Phân tích ảnh 🚀</button>
+        </div>
+
+        <!-- Trạng thái đang tải -->
+        <div id="loading" class="hidden">🧠 AI đang suy nghĩ... (Chờ chút nhé)</div>
+
+        <!-- Hiển thị ảnh và Kết quả -->
+        <div class="result-section">
+            <div class="image-preview">
+                <img id="previewImg" src="" alt="Ảnh của bạn sẽ hiện ở đây" class="hidden">
+            </div>
+            
+            <div class="vocab-list">
+                <h3>📚 Từ vựng tìm thấy:</h3>
+                <ul id="vocabOutput">
+                    <!-- Kết quả API sẽ được Javascript chèn vào đây -->
+                    <li class="empty-msg">Chưa có dữ liệu. Hãy tải ảnh lên!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>  
+</body>
+</html>

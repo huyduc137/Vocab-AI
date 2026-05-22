@@ -21,6 +21,7 @@ backend/data_source/collected/*
 # backend/data_source/training_data/*
 # !backend/data_source/training_data/.gitkeep
 
+
 # 5. Bỏ qua cấu hình riêng của các IDE (Editor)
 .vscode/
 .idea/

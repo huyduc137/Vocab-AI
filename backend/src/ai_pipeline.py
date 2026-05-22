@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import os, json
 
 currentDir = os.path.dirname(__file__)
-vocabPath = os.path.join(currentDir, "../data_source/vocab.json")
+vocabPath = os.path.join(currentDir, "../data_source/vocab_db.json")
 
 # đọc từ điển json
 def loadVocabDB():

@@ -1,0 +1,18 @@
+{
+    "person": {
+        "related": ["human", "man", "woman", "people"],
+        "example": "There is a person standing in the street."
+    },
+    "dog": {
+        "related": ["pet", "animal", "puppy", "canine"],
+        "example": "The dog is playing happily in the park."
+    },
+    "cat": {
+        "related": ["pet", "kitten", "feline"],
+        "example": "The cat is sleeping on the sofa."
+    },
+    "car": {
+        "related": ["vehicle", "transport", "drive"],
+        "example": "He is driving a fast car."
+    }
+}

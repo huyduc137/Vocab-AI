@@ -1,12 +1,17 @@
 from ultralytics import YOLO
+import os, json
 
-VOCAB_DB = {
-    "person": {"related": ["human", "man"], "example": "A person is walking."},
-    "dog": {"related": ["pet", "animal"], "example": "The dog is playing."}
-}
+currentDir = os.path.dirname(__file__)
+vocabPath = os.path.join(currentDir, "../data_source/vocab.json")
+
+# đọc từ điển json
+def loadVocabDB():
+    with open(vocabPath, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 def processImage(image_path: str):
     model = YOLO("../models/yolov8m.pt")
+    vocabDb = loadVocabDB()
     
     results = model(image_path, conf=0.5)
     detected_words = set()
@@ -18,7 +23,7 @@ def processImage(image_path: str):
             
     final_output = []
     for word in detected_words:
-        info = VOCAB_DB.get(word, {"related": ["object"], "example": f"I see a {word}."})
+        info = vocabDb.get(word, {"related": ["object"], "example": f"I see a {word}."})
         final_output.append({
             "word": word,
             "related": info["related"],

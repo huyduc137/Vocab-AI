@@ -1,0 +1,20 @@
+{
+    "3f94d54a-7ea0-4bf8-b563-6ecb00bd518d.jpg": {
+        "timestamp": "2026-05-23 17:00:21",
+        "issues": [
+            {
+                "word": "tie",
+                "confidence": 0.33
+            }
+        ]
+    },
+    "0981f911-8667-4efc-9d1b-e6d18afd61ef.jpg": {
+        "timestamp": "2026-05-23 18:22:35",
+        "issues": [
+            {
+                "word": "tie",
+                "confidence": 0.33
+            }
+        ]
+    }
+}

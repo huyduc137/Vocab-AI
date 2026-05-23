@@ -1,6 +1,7 @@
 from fastapi import FastAPI, APIRouter, UploadFile, File, HTTPException
 import shutil, traceback
-import os, uuid, json
+import os, json
+import hashlib
 
 from datetime import datetime
 from src.ai_pipeline import processImage
@@ -11,14 +12,17 @@ def readFile(file: UploadFile):
     try:
         basePath = "data_source/collected/"
         os.makedirs(basePath, exist_ok=True)
+        content = file.file.read()
+        imageHash = hashlib.md5(content).hexdigest()
         _, fileExtension = os.path.splitext(file.filename)
-        imageId = f"{uuid.uuid4()}{fileExtension}"
+        imageId = f"{imageHash}{fileExtension}"
         filePath = os.path.join(basePath, imageId)
+        with open(filePath, "wb") as f:
+            f.write(content)
 
-        with open(filePath, "wb") as buffer:
-            shutil.copyfileobj(file.file, buffer)
+        isDuplicate = os.path.exists(os.path.join("data_source/collected/low_confidence/images", imageId))
 
-        return filePath, imageId
+        return filePath, imageId, isDuplicate
     except Exception as e:
         traceback.print_exc()
         raise HTTPException(status_code=500, detail="Error reading file")
@@ -57,10 +61,10 @@ def handleLowConfidence(lowConfidenceObjects: list, imageId: str, filePath: str)
 
 @router.post("/api/v1/predict")
 async def predict(file: UploadFile = File(...)):
-    filePath, imageId = readFile(file)
+    filePath, imageId, isDuplicate = readFile(file)
     results, lowConfidenceObjects = processImage(filePath)
 
-    if len(lowConfidenceObjects) > 0:
+    if not isDuplicate and len(lowConfidenceObjects) > 0:
         handleLowConfidence(lowConfidenceObjects, imageId, filePath)
 
     if os.path.exists(filePath):

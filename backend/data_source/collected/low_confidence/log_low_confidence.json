@@ -16,5 +16,71 @@
                 "confidence": 0.33
             }
         ]
+    },
+    "3f6e2a58e9602bfdfa80c4903cb51f37.jpg": {
+        "timestamp": "2026-05-23 20:11:15",
+        "issues": [
+            {
+                "word": "tie",
+                "confidence": 0.33
+            }
+        ]
+    },
+    "41bfc62dd19fd5fbf87c2dbca83909d9.jpg": {
+        "timestamp": "2026-05-23 20:11:22",
+        "issues": [
+            {
+                "word": "laptop",
+                "confidence": 0.41
+            },
+            {
+                "word": "remote",
+                "confidence": 0.4
+            },
+            {
+                "word": "cell phone",
+                "confidence": 0.39
+            },
+            {
+                "word": "keyboard",
+                "confidence": 0.28
+            },
+            {
+                "word": "cell phone",
+                "confidence": 0.22
+            },
+            {
+                "word": "keyboard",
+                "confidence": 0.21
+            },
+            {
+                "word": "tv",
+                "confidence": 0.16
+            },
+            {
+                "word": "keyboard",
+                "confidence": 0.16
+            },
+            {
+                "word": "person",
+                "confidence": 0.15
+            },
+            {
+                "word": "chair",
+                "confidence": 0.14
+            },
+            {
+                "word": "book",
+                "confidence": 0.14
+            },
+            {
+                "word": "dining table",
+                "confidence": 0.12
+            },
+            {
+                "word": "book",
+                "confidence": 0.11
+            }
+        ]
     }
 }

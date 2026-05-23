@@ -1,18 +1,722 @@
 {
     "person": {
-        "related": ["human", "man", "woman", "people"],
+        "related": [
+            "human",
+            "man",
+            "woman",
+            "people"
+        ],
         "example": "There is a person standing in the street."
     },
-    "dog": {
-        "related": ["pet", "animal", "puppy", "canine"],
-        "example": "The dog is playing happily in the park."
-    },
-    "cat": {
-        "related": ["pet", "kitten", "feline"],
-        "example": "The cat is sleeping on the sofa."
+    "bicycle": {
+        "related": [
+            "bike",
+            "cycle",
+            "ride",
+            "wheel"
+        ],
+        "example": "He rode a bicycle to school."
     },
     "car": {
-        "related": ["vehicle", "transport", "drive"],
+        "related": [
+            "vehicle",
+            "auto",
+            "drive",
+            "road"
+        ],
         "example": "He is driving a fast car."
+    },
+    "motorcycle": {
+        "related": [
+            "bike",
+            "engine",
+            "helmet",
+            "ride"
+        ],
+        "example": "A motorcycle sped past the traffic light."
+    },
+    "airplane": {
+        "related": [
+            "plane",
+            "flight",
+            "airport",
+            "pilot"
+        ],
+        "example": "The airplane is flying above the clouds."
+    },
+    "bus": {
+        "related": [
+            "coach",
+            "vehicle",
+            "passenger",
+            "stop"
+        ],
+        "example": "The bus arrived at the station."
+    },
+    "train": {
+        "related": [
+            "railway",
+            "track",
+            "engine",
+            "station"
+        ],
+        "example": "The train left the station on time."
+    },
+    "truck": {
+        "related": [
+            "lorry",
+            "cargo",
+            "driver",
+            "delivery"
+        ],
+        "example": "A truck is carrying heavy boxes."
+    },
+    "boat": {
+        "related": [
+            "ship",
+            "sail",
+            "water",
+            "harbor"
+        ],
+        "example": "The boat is moving across the lake."
+    },
+    "traffic light": {
+        "related": [
+            "signal",
+            "red",
+            "green",
+            "intersection"
+        ],
+        "example": "The traffic light turned red."
+    },
+    "fire hydrant": {
+        "related": [
+            "water",
+            "emergency",
+            "street",
+            "safety"
+        ],
+        "example": "A fire hydrant stands near the corner."
+    },
+    "stop sign": {
+        "related": [
+            "sign",
+            "traffic",
+            "red",
+            "halt"
+        ],
+        "example": "The driver stopped at the stop sign."
+    },
+    "parking meter": {
+        "related": [
+            "parking",
+            "coin",
+            "ticket",
+            "street"
+        ],
+        "example": "He paid the parking meter before leaving."
+    },
+    "bench": {
+        "related": [
+            "seat",
+            "park",
+            "wooden",
+            "rest"
+        ],
+        "example": "They sat on a bench in the park."
+    },
+    "bird": {
+        "related": [
+            "animal",
+            "wing",
+            "fly",
+            "nest"
+        ],
+        "example": "A bird is singing in the tree."
+    },
+    "cat": {
+        "related": [
+            "pet",
+            "kitten",
+            "feline",
+            "animal"
+        ],
+        "example": "The cat is sleeping on the sofa."
+    },
+    "dog": {
+        "related": [
+            "pet",
+            "animal",
+            "puppy",
+            "canine"
+        ],
+        "example": "The dog is playing happily in the park."
+    },
+    "horse": {
+        "related": [
+            "animal",
+            "ride",
+            "stable",
+            "mane"
+        ],
+        "example": "The horse ran across the field."
+    },
+    "sheep": {
+        "related": [
+            "wool",
+            "farm",
+            "flock",
+            "animal"
+        ],
+        "example": "The sheep are grazing on the hill."
+    },
+    "cow": {
+        "related": [
+            "farm",
+            "milk",
+            "cattle",
+            "animal"
+        ],
+        "example": "The cow is eating grass in the field."
+    },
+    "elephant": {
+        "related": [
+            "animal",
+            "trunk",
+            "large",
+            "wildlife"
+        ],
+        "example": "The elephant is walking slowly through the forest."
+    },
+    "bear": {
+        "related": [
+            "animal",
+            "forest",
+            "wild",
+            "claws"
+        ],
+        "example": "A bear was seen near the river."
+    },
+    "zebra": {
+        "related": [
+            "animal",
+            "stripes",
+            "wildlife",
+            "savanna"
+        ],
+        "example": "The zebra has black and white stripes."
+    },
+    "giraffe": {
+        "related": [
+            "animal",
+            "neck",
+            "tall",
+            "savanna"
+        ],
+        "example": "A giraffe is eating leaves from a tall tree."
+    },
+    "backpack": {
+        "related": [
+            "bag",
+            "school",
+            "carry",
+            "travel"
+        ],
+        "example": "She packed her books into a backpack."
+    },
+    "umbrella": {
+        "related": [
+            "rain",
+            "shade",
+            "protect",
+            "cover"
+        ],
+        "example": "He opened an umbrella because it was raining."
+    },
+    "handbag": {
+        "related": [
+            "purse",
+            "bag",
+            "fashion",
+            "carry"
+        ],
+        "example": "She placed her phone inside her handbag."
+    },
+    "tie": {
+        "related": [
+            "suit",
+            "formal",
+            "neckwear",
+            "office"
+        ],
+        "example": "He wore a tie to the meeting."
+    },
+    "suitcase": {
+        "related": [
+            "luggage",
+            "travel",
+            "bag",
+            "trip"
+        ],
+        "example": "She packed a suitcase for her vacation."
+    },
+    "frisbee": {
+        "related": [
+            "disc",
+            "game",
+            "throw",
+            "outdoor"
+        ],
+        "example": "The children are throwing a frisbee in the park."
+    },
+    "skis": {
+        "related": [
+            "snow",
+            "winter",
+            "sport",
+            "slope"
+        ],
+        "example": "He carried his skis to the ski resort."
+    },
+    "snowboard": {
+        "related": [
+            "snow",
+            "winter",
+            "sport",
+            "slope"
+        ],
+        "example": "She learned to ride a snowboard last winter."
+    },
+    "sports ball": {
+        "related": [
+            "game",
+            "play",
+            "team",
+            "ball"
+        ],
+        "example": "A sports ball rolled across the grass."
+    },
+    "kite": {
+        "related": [
+            "fly",
+            "string",
+            "wind",
+            "toy"
+        ],
+        "example": "The kite was flying high in the sky."
+    },
+    "baseball bat": {
+        "related": [
+            "sport",
+            "hit",
+            "game",
+            "wood"
+        ],
+        "example": "He swung the baseball bat with great power."
+    },
+    "baseball glove": {
+        "related": [
+            "sport",
+            "catch",
+            "field",
+            "hand"
+        ],
+        "example": "She wore a baseball glove to catch the ball."
+    },
+    "skateboard": {
+        "related": [
+            "board",
+            "ride",
+            "wheel",
+            "sport"
+        ],
+        "example": "The boy rode his skateboard down the street."
+    },
+    "surfboard": {
+        "related": [
+            "surf",
+            "wave",
+            "ocean",
+            "board"
+        ],
+        "example": "He carried the surfboard to the beach."
+    },
+    "tennis racket": {
+        "related": [
+            "tennis",
+            "sport",
+            "hit",
+            "net"
+        ],
+        "example": "She held the tennis racket tightly before serving."
+    },
+    "bottle": {
+        "related": [
+            "drink",
+            "container",
+            "water",
+            "cap"
+        ],
+        "example": "There is a bottle of water on the table."
+    },
+    "wine glass": {
+        "related": [
+            "glass",
+            "drink",
+            "stem",
+            "table"
+        ],
+        "example": "A wine glass stood on the dinner table."
+    },
+    "cup": {
+        "related": [
+            "mug",
+            "drink",
+            "tea",
+            "coffee"
+        ],
+        "example": "She drank tea from a cup."
+    },
+    "fork": {
+        "related": [
+            "spoon",
+            "knife",
+            "utensil",
+            "eat"
+        ],
+        "example": "He used a fork to eat his salad."
+    },
+    "knife": {
+        "related": [
+            "blade",
+            "cut",
+            "utensil",
+            "slice"
+        ],
+        "example": "The knife is on the kitchen counter."
+    },
+    "spoon": {
+        "related": [
+            "utensil",
+            "soup",
+            "eat",
+            "tableware"
+        ],
+        "example": "She stirred the soup with a spoon."
+    },
+    "bowl": {
+        "related": [
+            "dish",
+            "food",
+            "container",
+            "serve"
+        ],
+        "example": "The cereal is in a bowl."
+    },
+    "banana": {
+        "related": [
+            "fruit",
+            "yellow",
+            "peel",
+            "food"
+        ],
+        "example": "He ate a banana for breakfast."
+    },
+    "apple": {
+        "related": [
+            "fruit",
+            "red",
+            "tree",
+            "food"
+        ],
+        "example": "She packed an apple in her lunch box."
+    },
+    "sandwich": {
+        "related": [
+            "bread",
+            "lunch",
+            "food",
+            "meal"
+        ],
+        "example": "He made a sandwich with cheese and ham."
+    },
+    "orange": {
+        "related": [
+            "fruit",
+            "citrus",
+            "juice",
+            "food"
+        ],
+        "example": "An orange was sitting on the kitchen table."
+    },
+    "broccoli": {
+        "related": [
+            "vegetable",
+            "green",
+            "food",
+            "healthy"
+        ],
+        "example": "Broccoli is a healthy vegetable."
+    },
+    "carrot": {
+        "related": [
+            "vegetable",
+            "orange",
+            "food",
+            "healthy"
+        ],
+        "example": "She added a carrot to the soup."
+    },
+    "hot dog": {
+        "related": [
+            "sausage",
+            "bread",
+            "snack",
+            "food"
+        ],
+        "example": "He bought a hot dog at the stadium."
+    },
+    "pizza": {
+        "related": [
+            "cheese",
+            "slice",
+            "food",
+            "dinner"
+        ],
+        "example": "They ordered a pizza for dinner."
+    },
+    "donut": {
+        "related": [
+            "dessert",
+            "sweet",
+            "pastry",
+            "snack"
+        ],
+        "example": "She bought a donut with chocolate glaze."
+    },
+    "cake": {
+        "related": [
+            "dessert",
+            "sweet",
+            "birthday",
+            "bake"
+        ],
+        "example": "There was a cake on the birthday table."
+    },
+    "chair": {
+        "related": [
+            "seat",
+            "furniture",
+            "sit",
+            "table"
+        ],
+        "example": "He pulled out a chair and sat down."
+    },
+    "couch": {
+        "related": [
+            "sofa",
+            "seat",
+            "furniture",
+            "living room"
+        ],
+        "example": "The family relaxed on the couch."
+    },
+    "potted plant": {
+        "related": [
+            "plant",
+            "pot",
+            "green",
+            "decor"
+        ],
+        "example": "A potted plant is near the window."
+    },
+    "bed": {
+        "related": [
+            "sleep",
+            "mattress",
+            "blanket",
+            "bedroom"
+        ],
+        "example": "She went to bed early last night."
+    },
+    "dining table": {
+        "related": [
+            "table",
+            "meal",
+            "furniture",
+            "dining"
+        ],
+        "example": "The dishes are set on the dining table."
+    },
+    "toilet": {
+        "related": [
+            "bathroom",
+            "restroom",
+            "flush",
+            "sink"
+        ],
+        "example": "The toilet is in the bathroom."
+    },
+    "tv": {
+        "related": [
+            "television",
+            "screen",
+            "watch",
+            "remote"
+        ],
+        "example": "They watched a movie on the TV."
+    },
+    "laptop": {
+        "related": [
+            "computer",
+            "keyboard",
+            "screen",
+            "device"
+        ],
+        "example": "She typed her report on a laptop."
+    },
+    "mouse": {
+        "related": [
+            "computer",
+            "click",
+            "cursor",
+            "device"
+        ],
+        "example": "The mouse is beside the keyboard."
+    },
+    "remote": {
+        "related": [
+            "control",
+            "tv",
+            "button",
+            "device"
+        ],
+        "example": "He used the remote to change the channel."
+    },
+    "keyboard": {
+        "related": [
+            "computer",
+            "keys",
+            "typing",
+            "device"
+        ],
+        "example": "The keyboard is on the desk."
+    },
+    "cell phone": {
+        "related": [
+            "mobile",
+            "smartphone",
+            "call",
+            "message"
+        ],
+        "example": "She checked a message on her cell phone."
+    },
+    "microwave": {
+        "related": [
+            "oven",
+            "heat",
+            "kitchen",
+            "appliance"
+        ],
+        "example": "He warmed the soup in the microwave."
+    },
+    "oven": {
+        "related": [
+            "bake",
+            "cook",
+            "kitchen",
+            "appliance"
+        ],
+        "example": "The cake is baking in the oven."
+    },
+    "toaster": {
+        "related": [
+            "bread",
+            "toast",
+            "kitchen",
+            "appliance"
+        ],
+        "example": "She put two slices of bread in the toaster."
+    },
+    "sink": {
+        "related": [
+            "wash",
+            "water",
+            "kitchen",
+            "bathroom"
+        ],
+        "example": "The dishes are in the sink."
+    },
+    "refrigerator": {
+        "related": [
+            "fridge",
+            "cold",
+            "food",
+            "kitchen"
+        ],
+        "example": "The milk is in the refrigerator."
+    },
+    "book": {
+        "related": [
+            "read",
+            "page",
+            "novel",
+            "library"
+        ],
+        "example": "He is reading a book before bed."
+    },
+    "clock": {
+        "related": [
+            "time",
+            "watch",
+            "hours",
+            "wall"
+        ],
+        "example": "The clock shows three o'clock."
+    },
+    "vase": {
+        "related": [
+            "flower",
+            "decor",
+            "glass",
+            "container"
+        ],
+        "example": "Flowers were placed in a vase."
+    },
+    "scissors": {
+        "related": [
+            "cut",
+            "blade",
+            "tool",
+            "paper"
+        ],
+        "example": "She used scissors to cut the paper."
+    },
+    "teddy bear": {
+        "related": [
+            "toy",
+            "stuffed",
+            "bear",
+            "child"
+        ],
+        "example": "The child hugged a teddy bear."
+    },
+    "hair drier": {
+        "related": [
+            "dryer",
+            "hair",
+            "bathroom",
+            "device"
+        ],
+        "example": "She used a hair drier after washing her hair."
+    },
+    "toothbrush": {
+        "related": [
+            "toothpaste",
+            "hygiene",
+            "brush",
+            "bathroom"
+        ],
+        "example": "He keeps his toothbrush next to the sink."
     }
 }

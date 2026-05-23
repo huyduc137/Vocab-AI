@@ -3,6 +3,8 @@ import os, json
 
 currentDir = os.path.dirname(__file__)
 vocabPath = os.path.join(currentDir, "../data_source/vocab_db.json")
+modelPath = os.path.join(currentDir, "../models/yolov8m.pt")
+model = YOLO(modelPath)
 
 # đọc từ điển json
 def loadVocabDB():
@@ -10,19 +12,29 @@ def loadVocabDB():
         return json.load(f)
 
 def processImage(image_path: str):
-    model = YOLO("../models/yolov8m.pt")
     vocabDb = loadVocabDB()
     
-    results = model(image_path, conf=0.5)
-    detected_words = set()
+    results = model(image_path, conf=0.1)
+    detectedWords = set()
+    lowConfidenceObjects = []        # Danh sách để lưu các đối tượng có độ tin cậy thấp
     for result in results:
-        boxes = result.boxes
-        for box in boxes:
+        for box in result.boxes:
             classId = int(box.cls[0])
-            detected_words.add(model.names[classId])
+            conf = float(box.conf[0])
+            label = model.names[classId]
+            if conf >= 0.7:
+                detectedWords.add(label)
+            else:
+                lowConfidenceObjects.append(
+                    {
+                        "word": label,
+                        "confidence": round(conf, 2)
+                    }
+                )
+                
             
     final_output = []
-    for word in detected_words:
+    for word in detectedWords:
         info = vocabDb.get(word, {"related": ["object"], "example": f"I see a {word}."})
         final_output.append({
             "word": word,
@@ -30,4 +42,4 @@ def processImage(image_path: str):
             "example": info["example"]
         })
         
-    return final_output
+    return final_output, lowConfidenceObjects

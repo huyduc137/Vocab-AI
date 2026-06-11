@@ -44,11 +44,16 @@ submitBtn.addEventListener('click', async () => {
             result.data.forEach(item => {
                 const li = document.createElement('li');
                 li.style.listStyle = "none";
+                
+                // Thêm thẻ img và class bọc ngoài để căn chỉnh
                 li.innerHTML = `
-                    <div class="vocab-card">
-                        <h4 class="vocab-word">🎯 ${item.word.toUpperCase()}</h4>
-                        <div class="vocab-related">🔗 Từ liên quan: ${item.related.join(', ')}</div>
-                        <div class="vocab-example">📝 Ví dụ: "${item.example}"</div>
+                    <div class="vocab-card flex-card">
+                        <img src="data:image/jpeg;base64,${item.cropped_image}" alt="${item.word}" class="cropped-img">
+                        <div class="vocab-info">
+                            <h4 class="vocab-word">🎯 ${item.word.toUpperCase()}</h4>
+                            <div class="vocab-related">🔗 Từ liên quan: ${item.related.join(', ')}</div>
+                            <div class="vocab-example">📝 Ví dụ: "${item.example}"</div>
+                        </div>
                     </div>
                 `;
                 vocabOutput.appendChild(li);

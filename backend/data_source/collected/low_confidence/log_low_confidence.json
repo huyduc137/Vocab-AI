@@ -8,24 +8,6 @@
             }
         ]
     },
-    "0981f911-8667-4efc-9d1b-e6d18afd61ef.jpg": {
-        "timestamp": "2026-05-23 18:22:35",
-        "issues": [
-            {
-                "word": "tie",
-                "confidence": 0.33
-            }
-        ]
-    },
-    "3f6e2a58e9602bfdfa80c4903cb51f37.jpg": {
-        "timestamp": "2026-05-23 20:11:15",
-        "issues": [
-            {
-                "word": "tie",
-                "confidence": 0.33
-            }
-        ]
-    },
     "41bfc62dd19fd5fbf87c2dbca83909d9.jpg": {
         "timestamp": "2026-05-23 20:11:22",
         "issues": [
@@ -80,6 +62,132 @@
             {
                 "word": "book",
                 "confidence": 0.11
+            }
+        ]
+    },
+    "a41724d8c9d941501a7ac1624628ca9a.jpg": {
+        "timestamp": "2026-05-24 00:26:44",
+        "issues": [
+            {
+                "word": "vase",
+                "confidence": 0.6
+            },
+            {
+                "word": "potted plant",
+                "confidence": 0.58
+            },
+            {
+                "word": "couch",
+                "confidence": 0.57
+            },
+            {
+                "word": "bowl",
+                "confidence": 0.45
+            },
+            {
+                "word": "bench",
+                "confidence": 0.28
+            },
+            {
+                "word": "bench",
+                "confidence": 0.23
+            },
+            {
+                "word": "cup",
+                "confidence": 0.21
+            },
+            {
+                "word": "chair",
+                "confidence": 0.19
+            },
+            {
+                "word": "cup",
+                "confidence": 0.17
+            },
+            {
+                "word": "bench",
+                "confidence": 0.16
+            },
+            {
+                "word": "chair",
+                "confidence": 0.15
+            },
+            {
+                "word": "cup",
+                "confidence": 0.13
+            },
+            {
+                "word": "chair",
+                "confidence": 0.12
+            },
+            {
+                "word": "couch",
+                "confidence": 0.11
+            },
+            {
+                "word": "cup",
+                "confidence": 0.11
+            },
+            {
+                "word": "cup",
+                "confidence": 0.11
+            },
+            {
+                "word": "couch",
+                "confidence": 0.1
+            }
+        ]
+    },
+    "0a00c29a69d9864829870cc30bb91785.jpg": {
+        "timestamp": "2026-06-04 23:53:34",
+        "issues": [
+            {
+                "word": "bottle",
+                "confidence": 0.66
+            },
+            {
+                "word": "bottle",
+                "confidence": 0.61
+            },
+            {
+                "word": "spoon",
+                "confidence": 0.52
+            },
+            {
+                "word": "dining table",
+                "confidence": 0.3
+            },
+            {
+                "word": "keyboard",
+                "confidence": 0.28
+            },
+            {
+                "word": "book",
+                "confidence": 0.24
+            },
+            {
+                "word": "cup",
+                "confidence": 0.24
+            },
+            {
+                "word": "remote",
+                "confidence": 0.24
+            },
+            {
+                "word": "bowl",
+                "confidence": 0.23
+            },
+            {
+                "word": "chair",
+                "confidence": 0.15
+            },
+            {
+                "word": "chair",
+                "confidence": 0.12
+            },
+            {
+                "word": "bowl",
+                "confidence": 0.12
             }
         ]
     }
